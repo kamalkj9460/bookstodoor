@@ -1,0 +1,92 @@
+<style>
+  .grid-custom-outer .section-header.text-center{
+    padding-top: 30px;
+    padding-bottom: 8px;
+  }
+
+  .text-center {
+    text-align: center;
+
+  }
+  .grid.grid_inner_custom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  } 
+
+  .vendors__list li{
+    line-height: 30px;
+    color: black;
+  }
+
+
+  ul.vendors__list {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .vendors__list li a{
+    color: #333;
+    text-decoration: none;
+  }
+  
+</style>
+
+<div class="page-width grid-custom-outer">
+  <div class="grid grid-custom">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth grid__item_custom">
+      <div class="section-header text-center">
+        <h1 class="page-title">{{ page.title }}</h1>
+      </div>
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+      
+      {% assign totalCols = 3 %}
+      {% assign totalItems = shop.vendors | size %}
+      {% assign remainingCols = totalCols %}
+      {% assign remainingItems = totalItems %}
+      {% assign itemsToOutput = remainingItems | times: 1.0 | divided_by: remainingCols | ceil %}
+      
+      <div class="grid grid_inner_custom">
+        {% for i in (1..totalCols) %}
+          <div class="grid__item medium-up--one-third grid_item_inner_custom">
+            <ul class="vendors__list">
+              {% for j in (1..itemsToOutput) %}
+              	{% assign ind = totalItems | minus: remainingItems %}
+              	{% include 'vendor-list-item', vendor: shop.vendors[ind] %}
+              	{% assign remainingItems = remainingItems | minus: 1 %}
+              {% endfor %}
+            </ul>
+          </div>
+        {% if remainingItems == 0 %}
+	        {% break %}
+        {% endif %}
+        {% assign remainingCols = remainingCols | minus: 1 %}
+        {% assign itemsToOutput = remainingItems | times: 1.0 | divided_by: remainingCols | ceil %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,273 @@
+.site-header-wrapper .site-header-main{
+  padding: 0;
+  flex-direction: column;
+}
+.subcollections-featured-collection__description.rte.seo-text {
+    margin: 0 auto;
+    max-width: 110ch;
+}
+.site-header-main .cart-header {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  padding-right: 0;
+  align-items: center;
+  margin-bottom: 10px;
+  background: #ececec;
+  justify-content: space-between;
+}
+
+.site-header-main .cart-header .site-header-actions{
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header-main .cart-header .site-header-actions.site-header-actions__single{
+  justify-content: flex-end;
+}
+
+.site-header-main .cart-header .site-header-actions .site-header__account-link--account{
+  margin-bottom: 0;
+}
+
+.site-header-main .cart-header .site-header-cart{
+  position: inherit;
+  right: 0;
+  width: auto;
+  margin-top: 0;
+}
+
+.site-header-main .cart-header .site-header-cart > .site-header-cart--button{
+  display: flex;
+  color: #fff;
+  padding: 10px 20px;
+  align-items: center;
+  text-decoration: none;
+  background-color: #e55825;
+  border-color: #e55825;
+}
+
+.site-header-main .cart-header .site-header-cart .site-header-cart--button .site-header-cart--count {
+  position: inherit;
+}
+
+.site-header-main .cart-header .site-header-cart .site-header-cart--button .site-header-cart--count:after {
+  font-size: inherit;
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+.site-header.site-header-sticky--scrolled .site-header-main-content{
+  width: calc(100% - 40px);
+  margin-left: 40px;
+}
+
+.site-header-main .site-header-main-content{
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 10px 25px 10px;
+  position: relative;
+}
+
+.site-header.site-header-sticky--scrolled .site-header-main-content .site-header-menu-toggle{
+  left: -30px;
+}
+
+.site-header-main .site-header-main-content .cart-header {
+  display: none;
+}
+
+.site-navigation .navmenu .navmenu-link-depth-1.navmenu-link{
+  opacity: 1;
+  outline: none;
+  color: #ffffff;
+}
+
+.site-navigation .navmenu-depth-2 .navmenu-link:focus{
+  outline: none;
+}
+
+.productgrid--wrapper .breadcrumbs-container{
+  margin-top: 0;
+}
+
+#satcb_bar.satcb_bar_bottom{
+  opacity: 1;
+  z-index: 1000 !important;
+}
+
+.product-form--atc{
+  display: flex;
+  align-items: end;
+}
+
+.product-form--atc-qty{
+  width: 8.1875rem!important;
+}
+
+.product-form--atc .form-field.form-field--qty-select {
+  margin-top: 10px;
+}
+
+input#effectiveAppsEGWATC {
+  vertical-align: bottom!important;
+}
+
+.product-form--atc-qty span strong {
+  padding-left: 5px;
+}
+
+.product-main .product-form--atc-button {
+  width: calc(100% - 190px);
+  margin-top: 16px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.isbn {
+  margin-left: 5px;
+}
+
+.productgrid--item .productitem--info .productitem__price{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+#mc_embed_signup #mc-embedded-subscribe{
+  margin: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.site-footer-block-newsletter #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error{
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.product__price{
+  display: inline-flex;
+  align-items: center;
+}
+
+.product__price .price__current{
+  margin-bottom: 0;
+}
+
+.product__price .price__compare-at{
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.product-details__block-price .product__badge{
+  color: gray;
+  background-color: transparent;
+}
+
+.product-form--regular .product-form--atc .swym-button-bar{
+  padding: 15px 0 13px 5px;
+  margin: 0 0 0 4px!important;
+  border: 1px solid #ddd;
+}
+
+.cart-item--remove {
+  width: auto;
+  padding-left: 1rem;
+}
+
+.delete-btn a {
+  color: #000;
+  padding: 3px 7px;
+  border-radius: 0.25em;
+  border: 1px solid #aaa;
+  text-decoration: none;
+}
+
+.productgrid--item .productitem__badge{
+  top: 10px;
+  bottom: auto;
+  left: -1px;
+  overflow: hidden;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
+@media only screen and (min-width: 768px){
+  .product-vendor,
+  .product-details__block-vendor,
+  .product-details__block-sku{
+    display: inline-block;
+  }
+  .product-sku {
+    margin-left: 10px;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 720px){
+  .promo-grid--inner .promo-block.promo-grid--full-width {
+    grid-column-start: span 2;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .site-header .site-header-main .cart-header {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .site-header-main-content .small-promo{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .delete-btn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 479px){
+  .site-header-logo .site-logo{
+    max-width: 200px;
+  }
+  .site-header-main .cart-header {
+    justify-content: center;
+  }
+  .site-header-main .cart-header .site-header-actions,
+  .site-header-main .cart-header .site-header-cart{
+    display: none;
+  }
+  .site-header-main .site-header-main-content .cart-header {
+    height: 0;
+    display: block;
+    background-color: transparent;
+  }
+  .site-header-main .site-header-main-content .cart-header .site-header-cart{
+    display: block;
+    position: absolute;
+  }
+  .site-header-main .site-header-main-content .cart-header .site-header-cart--button{
+    background: transparent;
+    border-color: transparent;
+  }
+  .site-header-main .site-header-main-content .cart-header .site-header-cart--button .site-header-cart--count{
+    position: absolute;
+    right: 10px;
+  }
+  .site-header-main .site-header-main-content .cart-header .site-header-cart--button .site-header-cart--count:after{
+    font-size: .6875rem;
+    background-color: #d02130;
+    border: 2px solid #fff;
+  }
+  .site-header-main .site-header-main-content .cart-header .site-header-cart--button svg path{
+    fill: #000;
+  }
+  #smile-ui-container .smile-launcher-frame-container{
+    bottom: 40px !important;
+  }
+  #fsb_container #fsb_background{
+    z-index: 10000000000 !important;
+  }
+}

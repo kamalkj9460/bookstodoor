@@ -1,0 +1,102 @@
+<style>
+
+.custom-page-outer .page-width {
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid; */
+  padding-left:15px;
+  padding-right:15px;
+}
+  .custom-page-outer .custom_html_block iframe {
+    width: 80%;
+    min-height: 100vh;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:15px;
+}
+ .custom-page-outer .content_heading {
+    text-align: center;
+   padding-top:0rem;
+}
+  
+  .custom_html_block p{text-align: center}
+  
+  @media screen and (max-width:767px){
+    .custom-page-outer .custom_html_block iframe{
+    	width: 98% !important;
+    }
+  }
+  
+  
+</style>
+
+<div class="custom-page-outer">
+  <div class="page-width">
+
+<article class="site-page">
+  <header class="page-masthead">
+    <h1 class="page-title">
+      {{ page.title }}
+    </h1>
+  </header>
+
+  {% if page.content != blank %}
+    <div class=" rte">
+      {{ page.content }}
+    </div>
+  {% endif %}
+</article>
+
+    
+    
+  </div>	
+</div>
+
+{% schema %}
+  {
+    "name": "full width page",
+    "settings": [
+					{
+                    "type": "checkbox",
+                    "id": "full_page",
+                    "label": "Full Content"
+                  }
+				],
+	"blocks":[
+			{
+				"name": "full width content",
+				"type": "image",
+				"settings":[
+
+					{
+					"type": "text",
+                        "id": "section_title",
+                        "label": "Title",
+                        "default": "Talk about your Heading"
+					},
+					{
+						
+ 					"type": "liquid",
+                    "id": "custom_liquid_new",
+                    "label": "Custom HTML"
+					}
+				]
+			}
+			],
+  "presets": [
+    {
+      "name": "full width page",
+      "category": "Text"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+

@@ -216,7 +216,7 @@
             {% when 'description' %}
               {% if readmore_split[0] != blank %}
                 <div class="product-description rte" data-product-description>
-                  <div data-station-tabs-app data-station-tabs-product="{{ product.handle }}">{{ readmore_split[0] }}</div>
+                  <div data-station-tabs-app data-station-tabs-product="{{ product.handle }}">{{ readmore_split[0] | replace: ' src="https://www.youtube.com', ' data-src="https://www.youtube.com' }}</div>
                 </div>
               {% endif %}
             {% when 'form' %}

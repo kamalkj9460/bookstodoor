@@ -68,11 +68,11 @@
   
 </section>
 
-<script>
+<script type="lazyload2">
   {% capture content %}{% include 'trustpilot-review' %}{% endcapture %}
   var content = {{ content | json }};
   console.log({{ product.variants | json }});
-  $('document').ready(function(){
+  setTimeout(function(){
     setTimeout(() =>{
                document.getElementById('st-reviews_0-2').innerHTML = "<div class='station-tabs-content-inner'>" + content + "</div>";
     window.Trustpilot.loadFromElement(document.getElementById('trustbox'));

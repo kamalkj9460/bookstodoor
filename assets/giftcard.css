@@ -443,8 +443,8 @@ rgb(255, 255, 255)
 .button-secondary.disabled, .button-primary.disabled {
   color: #ffffff;
   cursor: default;
-  background-color: #787878;
-  border: 1px solid #787878;
+  background-color: #838383;
+  border: 1px solid #838383;
 }
 
 .giftcard--container {
@@ -481,20 +481,20 @@ rgb(255, 255, 255)
   background-color: #fce2e2;
 }.button-primary {
   color: #ffffff;
-  background-color: #d02130;
-  border: 1px solid #d02130;
+  background-color: #f39c12;
+  border: 1px solid #f39c12;
 }
 .button-primary:not(.disabled):hover {
-  background: rgb(213, 55, 69);
-  border: 1px solid rgb(213, 55, 69);
+  background: rgb(244, 166, 42);
+  border: 1px solid rgb(244, 166, 42);
 }
 .button-primary:active {
   background: 
-#b61d2a
+#e5910c
 
 ;
   border: 1px solid 
-#b61d2a
+#e5910c
 
 ;
 }
@@ -510,11 +510,11 @@ rgb(255, 255, 255)
 
 .button-secondary {
   color: #ffffff;
-  background-color: #d02130;
+  background-color: #2980b9;
   border: 1px solid #dddddd;
 }
 .button-secondary:not(.disabled):hover {
-  background: rgb(217, 77, 89);
+  background: rgb(84, 153, 199);
   border: 1px solid 
 #cecece
 

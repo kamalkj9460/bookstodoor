@@ -1,0 +1,23 @@
+{%- assign fonts_type_body_family = settings.type_body.family | append: ',' | append: settings.type_body.fallback_families -%}
+{%- assign fonts_type_body_bolder = settings.type_body | font_modify: 'weight', 'bolder' -%}
+{%- assign fonts_type_heading_family = settings.type_heading.family | append: ',' | append: settings.type_heading.fallback_families -%}
+{%- assign fonts_type_heading_bolder = settings.type_heading | font_modify: 'weight', 'bolder' -%}
+{%- assign fonts_type_heading_lighter = settings.type_heading | font_modify: 'weight', 'lighter' -%}
+{%- assign fonts_type_button_family = settings.type_button.family | append: ',' | append: settings.type_button.fallback_families -%}
+{%- assign fonts_type_button_family = settings.type_button.family | append: ',' | append: settings.type_button.fallback_families -%}
+{%- assign fonts_type_menu_family = settings.type_menu.family | append: ',' | append: settings.type_menu.fallback_families -%}
+{%- assign fonts_type_section_family = settings.type_section.family | append: ',' | append: settings.type_section.fallback_families -%}
+
+
+<link rel="preload" href="{{ settings.type_body | font_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ fonts_type_body_bolder | font_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ settings.type_heading | font_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ fonts_type_heading_bolder | font_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ fonts_type_heading_lighter | font_url }}" as="font" type="font/woff2" crossorigin>
+<style>
+  {{ settings.type_body | font_face: font_display: 'swap' }}
+  {{ fonts_type_body_bolder | font_face: font_display: 'swap' }}
+  {{ settings.type_heading | font_face: font_display: 'swap' }}
+  {{ fonts_type_heading_bolder | font_face: font_display: 'swap' }}
+  {{ fonts_type_heading_lighter | font_face: font_display: 'swap' }}
+</style>

@@ -297,7 +297,7 @@
               {%- if product.selected_or_first_available_variant.barcode.size == 14 -%}
                   ,"gtin14": "{{ product.selected_or_first_available_variant.barcode }}"
               {%- endif -%}
-                  {%- if reviewCount > 0 -%}
+              {%- if reviewCount > 0 -%}
                   ,"aggregateRating": {
                       "@type": "AggregateRating",
                       "ratingValue": "{{ reviewRating }}",
@@ -315,7 +315,7 @@
                       "name": "{{ shop.name }} customers"
                     }
                   }
-                         {%- endif -%}
+             {%- endif -%}
           }
         </script>
 
